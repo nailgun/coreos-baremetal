@@ -2,6 +2,8 @@
 
 ## Latest
 
+* Update Fuze and Ignition to v0.11.2
+
 #### Examples
 
 * Upgrade Kubernetes v1.4.6 (static manifest) example clusters
