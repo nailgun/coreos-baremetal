@@ -69,7 +69,7 @@ systemd:
           --api-servers={{.k8s_controller_endpoint}} \
           --register-node=true \
           --cni-conf-dir=/etc/kubernetes/cni/net.d \
-          --network-plugin= \
+          --network-plugin=cni \
           --allow-privileged=true \
           --pod-manifest-path=/etc/kubernetes/manifests \
           --hostname-override={{.domain_name}} \
