@@ -30,6 +30,12 @@ systemd:
             After=flanneld.service
             [Service]
             EnvironmentFile=/etc/kubernetes/cni/docker_opts_cni.env
+    - name: docker.service
+      dropins:
+        - name: 50-insecure-registry.conf
+          contents: |
+            [Service]
+            Environment='DOCKER_OPTS=--insecure-registry="10.0.0.0/8"'
     - name: locksmithd.service
       dropins:
         - name: 40-etcd-lock.conf
