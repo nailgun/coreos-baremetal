@@ -115,6 +115,11 @@ storage:
             - "-LROOT"
   {{end}}
   files:
+    - path: /etc/hostname
+      filesystem: root
+      contents:
+        inline: |
+          {{.domain_name}}
     - path: /etc/kubernetes/cni/net.d/10-flannel.conf
       filesystem: root
       contents:
