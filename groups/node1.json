@@ -1,0 +1,22 @@
+{
+  "id": "node1",
+  "name": "k8s controller",
+  "profile": "k8s-controller",
+  "selector": {
+    "mac": "08:00:27:b4:b2:3e"
+  },
+  "metadata": {
+    "domain_name": "192.168.56.101",
+    "etcd_initial_cluster": "node1=http://192.168.56.101:2380",
+    "etcd_name": "node1",
+    "k8s_cert_endpoint": "http://192.168.56.1:8080/assets",
+    "k8s_dns_service_ip": "10.3.0.10",
+    "k8s_etcd_endpoints": "http://192.168.56.101:2379",
+    "k8s_pod_network": "10.2.0.0/16",
+    "k8s_service_ip_range": "10.3.0.0/24",
+    "pxe": "true",
+    "ssh_authorized_keys": [
+      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJpRJ1HFmmcye9nO8I99QiCcvKSYZgAt5Fk7P84nme8toihgZgG6Tiw6d2tJk27OfZHuWhmKvTwv+KcOxTXidu5QryVOcowhMfB+0ynH2lX6LNBjdsjjA+Ex5W0867IdTvsEVVjxKhgh9Ew61e6KhlyqYmIQ+1PO/jMMd78Aj2JF9/rTY0CRq+ofal8L4pgAlQoNB7gjRtaeyiTzJbhFSAOtQkBjJ9o738Z0R8Bs+4N7yM6bBx66rJk0R6UgslS2lmM52yyvyQHC0n+A8OXwTLXL83hJNXeyWiDcyKlRuvpJPOPkF87jYdNP1d7mlfFL82lQBE6iH2N3rNx04qQz83 dbashkatov@gmail.com"
+    ]
+  }
+}
