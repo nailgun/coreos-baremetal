@@ -7,7 +7,6 @@
     "cmdline": {
       "root": "/dev/sda1",
       "coreos.config.url": "http://192.168.56.1:8080/ignition?uuid=${uuid}&mac=${net0/mac:hexhyp}",
-      "coreos.autologin": "",
       "coreos.first_boot": ""
     }
   },
