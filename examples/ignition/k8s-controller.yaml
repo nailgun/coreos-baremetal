@@ -1,4 +1,9 @@
 ---
+ignition:
+  config:
+    append:
+      - source: "{{.ignition_endpoint}}?{{.request.raw_query}}&part=volumes"
+
 systemd:
   units:
     - name: etcd2.service
