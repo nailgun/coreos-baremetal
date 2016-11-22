@@ -3,11 +3,9 @@
   "name": "k8s controller",
   "profile": "k8s-controller",
   "selector": {
-    "mac": "08:00:27:b4:b2:3e",
-    "part": ""
+    "mac": "08:00:27:b4:b2:3e"
   },
   "metadata": {
-    "ignition_endpoint": "http://192.168.56.1:8080/ignition",
     "domain_name": "192.168.56.101",
     "etcd_initial_cluster": "node1=http://192.168.56.101:2380",
     "etcd_name": "node1",
