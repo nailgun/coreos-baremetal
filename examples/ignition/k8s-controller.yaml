@@ -216,7 +216,7 @@ storage:
               - --etcd-servers={{.k8s_etcd_endpoints}}
               - --allow-privileged=true
               - --service-cluster-ip-range={{.k8s_service_ip_range}}
-              - --secure-port=443
+              - --secure-port=6443
               - --admission-control=NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,ResourceQuota
               - --tls-cert-file=/etc/kubernetes/ssl/apiserver.pem
               - --tls-private-key-file=/etc/kubernetes/ssl/apiserver-key.pem
@@ -231,8 +231,8 @@ storage:
                 initialDelaySeconds: 15
                 timeoutSeconds: 15
               ports:
-              - containerPort: 443
-                hostPort: 443
+              - containerPort: 6443
+                hostPort: 6443
                 name: https
               - containerPort: 8080
                 hostPort: 8080
